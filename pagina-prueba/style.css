@@ -1,0 +1,27 @@
+.top-part {
+	background-color: #1F2937;
+	color: white;
+}
+.flex-header {
+	display: flex;
+}
+
+.flex-header h6 h4 {
+	flex:1 1 1;
+}
+
+h4 {
+	size: 3px;
+	flex: 100;
+	padding: 1.5%;
+}
+h6 {
+	padding: 1.5%;
+}
+/*h6 {
+	align-items: right;
+	margin-right: 0%;
+}
+h4 {
+	justify-content: center;
+}
