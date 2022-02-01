@@ -22,6 +22,7 @@ h4 {
   size: 3px;
   flex: 100;
 }
-h1 {
-  margin-left: 10%;
+.title-container {
+  display: flex;
+  margin: 0 10% 10% 10%;
 }
