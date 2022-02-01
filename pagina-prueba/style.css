@@ -1,27 +1,24 @@
+body {
+  margin: 0%;
+}
 .top-part {
-	background-color: #1F2937;
-	color: white;
+  color: white;
+  background-color: #1f2937;
+  box-sizing: border-box;
 }
 .flex-header {
-	display: flex;
+  display: flex;
 }
 
 .flex-header h6 h4 {
-	flex:1 1 1;
+  flex: 1 1 1;
 }
 
 h4 {
-	size: 3px;
-	flex: 100;
-	padding: 1.5%;
+  size: 3px;
+  flex: 100;
+  padding: 1.5%;
 }
-h6 {
-	padding: 1.5%;
-}
-/*h6 {
-	align-items: right;
-	margin-right: 0%;
-}
-h4 {
-	justify-content: center;
+.top-part {
+  padding: 1.5%;
 }
