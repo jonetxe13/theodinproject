@@ -6,12 +6,30 @@
 	</head>
 	<body>
 		  <script>
-				function add7(number){
-					const lower = number.toLowerCase();
-					const firstletter = lower.charAt(0).toUpperCase();
-				    console.log(firstletter + lower.slice(1));
+				function computerPlay(){
+					const i = Math.floor(Math.random() * (4 - 1)) + 1;
+					let computer = "tijeras";
+					if (i == 1){
+						 computer = "piedra";
+					}
+					if(i == 2){
+ 						 computer = "papel";
+					}
+					return computer;
 				}
-				add7("HOLA");
+				function playRound(playerSelection, computerSelection) {
+					let res = "has ganado";
+					if (playerSelection == computerSelection){
+ 							res = "empate";
+					}
+					if (playerSelection == "piedra" & computerSelection == "papel"){
+ 							res = "el ordenador gana";
+					}
+					return res;
+				}
+				const playerSelection = "papel";
+				const computerSelection = computerPlay();
+				console.log(playRound(playerSelection, computerSelection));
 			</script>
 	</body>
 </html></title>
