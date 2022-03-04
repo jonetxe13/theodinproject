@@ -1,41 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		  <title>Page Title</title>
-			  <meta charset="UTF-8"/>
+		  <meta charset="UTF-8"/>
 	</head>
 	<body>
-		  <script>
-				function computerPlay(){
-					const i = Math.floor(Math.random() * (4 - 1)) + 1;
-					let computer = "tijeras";
-					if (i == 1){
-						 computer = "piedra";
-					}
-					if(i == 2){
- 						 computer = "papel";
-					}
-					return computer;
-				}
-				function playRound(playerSelection, computerSelection) {
-					let res = "has ganado";
-					if (playerSelection == computerSelection){
- 							res = "empate";
-					}
-					if (playerSelection == "piedra" & computerSelection == "papel"){
- 							res = "el ordenador gana";
-					}
-					return res;
-				}
-				function game(){
-					let playerSelection = prompt("piedra, papel o tijeras");
-					let computerSelection = computerPlay();
-					let result = playRound(playerSelection, computerSelection);
-					console.log("el resultado es: " + result);
-				}
-				game();
-			</script>
+			<script src="./ui.js" defer></script>
+			<div class="container1"></div>
+			<div class="container2"></div>
+			<div class="container3"></div>
 	</body>
-</html></title>
-</head>
 </html>
