@@ -1,12 +1,13 @@
-import "../styles/globals.css"
-import Home from "./index"
-import Header from "./header"
+import "../styles/globals.css";
+import Header from "./header";
+import Cover from "./cover";
 
-
-export default function App(){
+function _app() {
   return (
-    <div className='font-bold'>
-      <Header/>
+    <div className="max-w-full">
+      <Header />
+      <Cover />
     </div>
-  )
+  );
 }
+export default _app;
